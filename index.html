@@ -1,360 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raifer Allen - Data Strategy Manager Portfolio</title>
-    <!-- Tailwind CSS CDN for easy styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter for a professional look -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* Custom CSS to set the default font and body styling */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8fafc; /* Light blue-gray background */
-            color: #334155; /* Darker text color */
-        }
-        /* Smooth scroll for navigation */
-        html {
-            scroll-behavior: smooth;
-        }
-        /* Adjust for sticky header padding for anchor links */
-        :target::before {
-            content: "";
-            display: block;
-            height: 4rem; /* Height of the sticky header */
-            margin-top: -4rem; /* Negative margin to offset */
-        }
-        /* Code block styling */
-        pre {
-            background-color: #2d3748; /* Darker background for code */
-            color: #e2e8f0; /* Lighter text color */
-            padding: 1.5rem;
-            border-radius: 0.5rem;
-            overflow-x: auto;
-            font-family: 'Courier New', Courier, monospace;
-            line-height: 1.5;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raifer Allen - Data Strategy Manager Portfolio</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for a professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS to set the default font and body styling for dark mode */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark background */
+            color: #d1d5db; /* Light gray text color */
+        }
+        /* Smooth scroll for navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Adjust for sticky header padding for anchor links */
+        :target::before {
+            content: "";
+            display: block;
+            height: 4rem; /* Height of the sticky header */
+            margin-top: -4rem; /* Negative margin to offset */
+        }
+        /* Code block styling */
+        pre {
+            background-color: #1f2937; /* Even darker background for code */
+            color: #9ca3af; /* Lighter text color */
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.5;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body class="antialiased">
 
-    <!-- Sticky Navigation Bar -->
-    <nav class="sticky top-0 z-50 bg-white shadow-lg p-4 rounded-b-lg">
-        <div class="container mx-auto flex justify-between items-center px-4">
-            <!-- Logo/Name -->
-            <a href="#" class="text-2xl font-bold text-indigo-700">Raifer Allen</a>
-            <!-- Navigation Links -->
-            <div class="space-x-6">
-                <a href="#about" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300">About</a>
-                <a href="#projects" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300">Projects</a>
-                <a href="#case-studies" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300">Case Studies</a>
-                <a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300">Contact</a>
-            </div>
-        </div>
-    </nav>
+    <!-- Sticky Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-gray-900 shadow-lg p-4 rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo/Name -->
+            <a href="#" class="text-2xl font-bold text-teal-400">Raifer Allen</a>
+            <!-- Navigation Links -->
+            <div class="space-x-6">
+                <a href="#about" class="text-gray-300 hover:text-teal-400 font-medium transition duration-300">About</a>
+                <a href="#projects" class="text-gray-300 hover:text-teal-400 font-medium transition duration-300">Projects</a>
+                <a href="#process-deep-dive" class="text-gray-300 hover:text-teal-400 font-medium transition duration-300">My Process</a>
+                <a href="#contact" class="text-gray-300 hover:text-teal-400 font-medium transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Hero Section (Executive Summary) -->
-    <header class="bg-gradient-to-r from-indigo-700 to-purple-600 text-white py-20 md:py-28 text-center shadow-lg rounded-lg mx-4 mt-8">
-        <div class="container mx-auto px-4">
-            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4 animate-fade-in-down">
-                Raifer Allen
-            </h1>
-            <p class="text-xl md:text-2xl font-light mb-8">
-                Data Strategy Manager | Empowering Data-Driven Decisions
-            </p>
-            <p class="max-w-3xl mx-auto text-lg mb-10 opacity-90">
-                Transforming complex data into actionable insights for strategic growth and operational excellence. Specializing in operational visibility, machine learning, and translating data into business success.
-            </p>
-            <a href="#projects" class="inline-block bg-white text-indigo-700 hover:bg-indigo-100 px-8 py-4 rounded-full text-lg font-semibold shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
-                View My Work
-            </a>
-        </div>
-    </header>
+    <!-- Hero Section (Executive Summary) -->
+    <header class="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-20 md:py-28 text-center shadow-lg rounded-lg mx-4 mt-8">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4 animate-fade-in-down text-teal-400">
+                Raifer Allen
+            </h1>
+            <p class="text-xl md:text-2xl font-light mb-8 text-teal-300">
+                Data Strategy Manager | Empowering Data-Driven Decisions
+            </p>
+            <p class="max-w-3xl mx-auto text-lg mb-10 opacity-90">
+                Transforming complex data into actionable insights for strategic growth and operational excellence. Specializing in operational visibility, machine learning, and translating data into business success.
+            </p>
+            <a href="#projects" class="inline-block bg-teal-400 text-gray-900 hover:bg-teal-300 px-8 py-4 rounded-full text-lg font-semibold shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
+                View My Work
+            </a>
+        </div>
+    </header>
 
-    <!-- About Me & Skills Section -->
-    <section id="about" class="py-16 md:py-24 bg-white rounded-lg mx-4 mt-8 shadow-xl">
-        <div class="container mx-auto px-4 max-w-5xl">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-indigo-800 mb-12">About Me & My Expertise</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="text-lg leading-relaxed text-gray-700">
-                    <p class="mb-6">
-                        As a Data Strategy Manager for the Department of Liquor and Lottery, I thrive at the intersection of data science, business strategy, and effective communication. My core mission is to empower leaders with the insights needed to define and achieve a successful day, optimizing operations and maximizing strategic outcomes.
-                    </p>
-                    <p>
-                        I specialize in building robust frameworks for operational visibility, developing and implementing impactful machine learning algorithms, and fostering clear, actionable stakeholder communication. My approach focuses on translating complex data narratives into clear, strategic directives that drive tangible results.
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-semibold text-indigo-700 mb-6">Key Skills & Tools</h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <ul class="list-disc list-inside space-y-2 text-gray-700">
-                            <li class="font-medium text-lg">Data Strategy & Governance</li>
-                            <li class="font-medium text-lg">Machine Learning (Development & Deployment)</li>
-                            <li class="font-medium text-lg">Operational Visibility & KPIs</li>
-                            <li class="font-medium text-lg">Stakeholder Communication</li>
-                            <li class="font-medium text-lg">Data Storytelling & Visualization</li>
-                            <li class="font-medium text-lg">SQL & Database Management</li>
-                        </ul>
-                        <ul class="list-disc list-inside space-y-2 text-gray-700">
-                            <li class="font-medium text-lg">Python (Pandas, Scikit-learn, etc.)</li>
-                            <li class="font-medium text-lg">Business Intelligence Tools (e.g., Tableau, Power BI)</li>
-                            <li class="font-medium text-lg">Predictive Analytics</li>
-                            <li class="font-medium text-lg">A/B Testing & Experimentation</li>
-                            <li class="font-medium text-lg">Project Management</li>
-                            <li class="font-medium text-lg">Risk Assessment & Mitigation</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- About Me & Skills Section -->
+    <section id="about" class="py-16 md:py-24 bg-gray-800 rounded-lg mx-4 mt-8 shadow-xl">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-teal-400 mb-12">About Me & My Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="text-lg leading-relaxed text-gray-300">
+                    <p class="mb-6">
+                        As a Data Strategy Manager for the Department of Liquor and Lottery, I thrive at the intersection of data science, business strategy, and effective communication. My core mission is to empower leaders with the insights needed to define and achieve a successful day, optimizing operations and maximizing strategic outcomes.
+                    </p>
+                    <p>
+                        I specialize in building robust frameworks for operational visibility, developing and implementing impactful machine learning algorithms, and fostering clear, actionable stakeholder communication. My approach focuses on translating complex data narratives into clear, strategic directives that drive tangible results.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-teal-400 mb-6">Key Skills & Tools</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <ul class="list-disc list-inside space-y-2 text-gray-300">
+                            <li class="font-medium text-lg">Data Strategy & Governance</li>
+                            <li class="font-medium text-lg">Machine Learning (Development & Deployment)</li>
+                            <li class="font-medium text-lg">Operational Visibility & KPIs</li>
+                            <li class="font-medium text-lg">Stakeholder Communication</li>
+                            <li class="font-medium text-lg">Data Storytelling & Visualization</li>
+                            <li class="font-medium text-lg">SQL & Database Management</li>
+                        </ul>
+                        <ul class="list-disc list-inside space-y-2 text-gray-300">
+                            <li class="font-medium text-lg">Python (Pandas, Scikit-learn, etc.)</li>
+                            <li class="font-medium text-lg">Business Intelligence Tools (e.g., Tableau, Power BI)</li>
+                            <li class="font-medium text-lg">Predictive Analytics</li>
+                            <li class="font-medium text-lg">A/B Testing & Experimentation</li>
+                            <li class="font-medium text-lg">Project Management</li>
+                            <li class="font-medium text-lg">Risk Assessment & Mitigation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-16 md:py-24 bg-gray-50 rounded-lg mx-4 mt-8 shadow-xl">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-indigo-800 mb-12">My Impactful Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-24 bg-gray-900 rounded-lg mx-4 mt-8 shadow-xl">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-teal-400 mb-12">My Impactful Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <!-- New Store Location Strategy -->
-                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col">
-                    <img src="images/new-store-location-strategy.png" alt="An abstract map showing data points and a new store location." class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
-                    <h3 class="text-2xl font-semibold text-indigo-700 mb-3">New Store Location Strategy</h3>
-                    <p class="text-gray-600 mb-4 flex-grow">
-                        Developed a comprehensive data model to identify optimal locations for new 802Spirits stores. The analysis combined census data, existing sales data, flood plain data, and AOT traffic density information to pinpoint high-potential sites.
-                    </p>
-                    <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
-                        <li>**Impact:** Generated a projected **$1.87 million in new revenue for FY25** by providing data-backed recommendations for store locations.</li>
-                        <li>**Tools:** Python, GIS tools, advanced data analysis techniques, data modeling.</li>
-                    </ul>
-                    <a href="#case-study-route-optimization" class="text-indigo-600 hover:underline font-medium mt-auto">View Technical Deep Dive &rarr;</a>
-                </div>
+                <!-- New Store Location Strategy -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col">
+                    <img src="uploaded:image_148f3f.png-f56f9dce-0505-4793-88ca-73c350b9c116" alt="A dashboard for new store location strategy." class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                    <h3 class="text-2xl font-semibold text-teal-400 mb-3">New Store Location Strategy</h3>
+                    <p class="text-gray-300 mb-4 flex-grow">
+                        Developed a comprehensive data model to identify optimal locations for new 802Spirits stores. The analysis combined census data, existing sales data, flood plain data, and AOT traffic density information to pinpoint high-potential sites.
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-gray-400 mb-4">
+                        <li><strong>Impact:</strong> Generated a projected <strong>$1.87 million in new revenue for FY25</strong> by providing data-backed recommendations for store locations.</li>
+                        <li><strong>Tools:</strong> Python, GIS tools, advanced data analysis techniques, data modeling.</li>
+                    </ul>
+                    <a href="#process-deep-dive" class="text-teal-400 hover:underline font-medium mt-auto">View Technical Deep Dive &rarr;</a>
+                </div>
 
-                <!-- Project Card 1: Compliance & Public Health -->
-                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col">
-                    <img src="images/synar-sampling-strategy.png" alt="A visual representation of a random sampling strategy for compliance checks." class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
-                    <h3 class="text-2xl font-semibold text-indigo-700 mb-3">Compliance & Public Health - Synar Sampling Strategy</h3>
-                    <p class="text-gray-600 mb-4 flex-grow">
-                        Designed a statistically valid random sampling process for tobacco compliance checks across three geographic zones, reducing annual checks from 1271 to 324. This action provided a repeatable methodology that maintains federal compliance while optimizing enforcement resources.
-                    </p>
-                    <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
-                        <li>**Impact:** Provided a repeatable sampling methodology that maintains compliance with federal Synar requirements and optimizes enforcement resources.</li>
-                        <li>**Tools:** Power BI, Power Query (M), random sampling algorithms, Salesforce integration planning.</li>
-                    </ul>
-                </div>
+                <!-- Project Card 1: Compliance & Public Health -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col">
+                    <img src="uploaded:image_149a6a.png-6a82922d-340f-4de6-b683-bda568530cc8" alt="A dashboard showing a random sampling strategy for compliance checks." class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                    <h3 class="text-2xl font-semibold text-teal-400 mb-3">Compliance & Public Health - Synar Sampling Strategy</h3>
+                    <p class="text-gray-300 mb-4 flex-grow">
+                        Designed a statistically valid random sampling process for tobacco compliance checks across three geographic zones, reducing annual checks from 1271 to 324. This action provided a repeatable methodology that maintains federal compliance while optimizing enforcement resources.
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-gray-400 mb-4">
+                        <li><strong>Impact:</strong> Provided a repeatable sampling methodology that maintains compliance with federal Synar requirements and optimizes enforcement resources.</li>
+                        <li><strong>Tools:</strong> Power BI, Power Query (M), random sampling algorithms, Salesforce integration planning.</li>
+                    </ul>
+                </div>
 
-                <!-- Project Card 2: Enterprise KPIs -->
-                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col">
-                    <!-- Corrected Image path -->
-                    <img src="images/Screenshot 2025-08-21 141005.png" alt="A dashboard showing Liquor Coordinator Performance, with charts and graphs of visit duration, travel time, and efficiency." class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
-                    <h3 class="text-2xl font-semibold text-indigo-700 mb-3">Enterprise KPIs & Performance Strategy</h3>
-                    <p class="text-gray-600 mb-4 flex-grow">
-                        Initiated a unified KPI framework by engaging managers across multiple divisions (Finance, Licensing, Enforcement, etc.) to define productivity and identify data sources. This established the foundation for cross-departmental dashboards that reflect real operational impact.
-                    </p>
-                    <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
-                        <li>**Impact:** Set the foundation for cross-departmental performance dashboards that reflect real operational impact, not vanity metrics.</li>
-                        <li>**Tools:** Facilitation, stakeholder engagement, KPI development, strategic alignment.</li>
-                    </ul>
-                </div>
+                <!-- Project Card 2: Enterprise KPIs -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col">
+                    <img src="uploaded:image_55713f.png-92d1406d-3c9d-442d-8c62-e11031966d6e" alt="A dashboard showing enterprise KPIs for the Liquor Division." class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                    <h3 class="text-2xl font-semibold text-teal-400 mb-3">Enterprise KPIs & Performance Strategy</h3>
+                    <p class="text-gray-300 mb-4 flex-grow">
+                        Initiated a unified KPI framework by engaging managers across multiple divisions (Finance, Licensing, Enforcement, etc.) to define productivity and identify data sources. This established the foundation for cross-departmental dashboards that reflect real operational impact.
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-gray-400 mb-4">
+                        <li><strong>Impact:</strong> Set the foundation for cross-departmental performance dashboards that reflect real operational impact, not vanity metrics.</li>
+                        <li><strong>Tools:</strong> Facilitation, stakeholder engagement, KPI development, strategic alignment.</li>
+                    </ul>
+                </div>
 
-                <!-- Project Card 3: Route Optimization -->
-                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col">
-                    <img src="images/route-optimization.png" alt="A top-down view of an optimized route with stops." class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
-                    <h3 class="text-2xl font-semibold text-indigo-700 mb-3">LiquorCoordinator Route Optimization</h3>
-                    <p class="text-gray-600 mb-4 flex-grow">
-                        Developed a route optimization solution using Python integrations, k-means clustering, and Haversine distance calculations. This project improved coordinator efficiency and agency satisfaction by fitting site visits into viable clusters for an eight-hour workday.
-                    </p>
-                    <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
-                        <li>**Impact:** Improved coordinator efficiency and improved agency satisfaction.</li>
-                        <li>**Tools:** Python, k-means clustering, Haversine, Power BI.</li>
-                    </ul>
-                    <a href="#case-study-route-optimization" class="text-indigo-600 hover:underline font-medium mt-auto">View Technical Deep Dive &rarr;</a>
-                </div>
+                <!-- Project Card 3: Route Optimization -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col">
+                    <img src="uploaded:image_20cde6.png-4c1867b0-2711-422c-852c-f60f329b47ef" alt="A dashboard showing an optimized route with stops." class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                    <h3 class="text-2xl font-semibold text-teal-400 mb-3">LiquorCoordinator Route Optimization</h3>
+                    <p class="text-gray-300 mb-4 flex-grow">
+                        Developed a route optimization solution using Python integrations, k-means clustering, and Haversine distance calculations. This project improved coordinator efficiency and agency satisfaction by fitting site visits into viable clusters for an eight-hour workday.
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-gray-400 mb-4">
+                        <li><strong>Impact:</strong> Improved coordinator efficiency and improved agency satisfaction.</li>
+                        <li><strong>Tools:</strong> Python, k-means clustering, Haversine, Power BI.</li>
+                    </ul>
+                    <a href="#process-deep-dive" class="text-teal-400 hover:underline font-medium mt-auto">View Technical Deep Dive &rarr;</a>
+                </div>
 
-                <!-- Project Card 4: Email Migration -->
-                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col">
-                    <!-- Corrected Image path -->
-                    <img src="images/email-migration.png" alt="A dashboard showing email response metrics by category and sentiment analysis." class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
-                    <h3 class="text-2xl font-semibold text-indigo-700 mb-3">Outlook Email Migration to SharePoint</h3>
-                    <p class="text-gray-600 mb-4 flex-grow">
-                        Automated the migration of Outlook group emails to SharePoint lists using Power Automate. This provided real-time operational visibility into average response times, first response times, and email categorization, including sentiment analysis.
-                    </p>
-                    <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
-                        <li>**Impact:** Provided operational visibility, including average response times, first response time categorization of emails.</li>
-                        <li>**Tools:** Power Automate, SharePoint, Power BI.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+                <!-- Project Card 4: Email Migration -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col">
+                    <img src="uploaded:image_1496c7.png-b9aea986-6ab6-478d-9618-0d8e0df1de81" alt="A dashboard showing email response metrics by category and sentiment analysis." class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                    <h3 class="text-2xl font-semibold text-teal-400 mb-3">Outlook Email Migration to SharePoint</h3>
+                    <p class="text-gray-300 mb-4 flex-grow">
+                        Automated the migration of Outlook group emails to SharePoint lists using Power Automate. This provided real-time operational visibility into average response times, first response times, and email categorization, including sentiment analysis.
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-gray-400 mb-4">
+                        <li><strong>Impact:</strong> Provided operational visibility, including average response times, first response time categorization of emails.</li>
+                        <li><strong>Tools:</strong> Power Automate, SharePoint, Power BI.</li>
+                    </ul>
+                </div>
 
-    <!-- Technical Case Studies Section -->
-    <section id="case-studies" class="py-16 md:py-24 bg-white rounded-lg mx-4 mt-8 shadow-xl">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-indigo-800 mb-12">Technical Case Studies</h2>
+                <!-- Project Card 5: Education & Public Outreach -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col">
+                    <img src="uploaded:image_55e203.png-925343b1-305c-496e-8a92-5b4975dc6cd6" alt="A dashboard showing education and public outreach metrics." class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                    <h3 class="text-2xl font-semibold text-teal-400 mb-3">Education & Public Outreach Strategy</h3>
+                    <p class="text-gray-300 mb-4 flex-grow">
+                        Developed a comprehensive dashboard to track the effectiveness of educational programs and public outreach initiatives. By visualizing data on program attendance, feedback, and key performance indicators, this tool helps in strategically allocating resources and improving the impact of public services.
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-gray-400 mb-4">
+                        <li><strong>Impact:</strong> Enabled data-driven decisions for public service programs, leading to improved resource allocation and community engagement.</li>
+                        <li><strong>Tools:</strong> Power BI, stakeholder feedback analysis.</li>
+                    </ul>
+                </div>
 
-            <!-- LiquorCoordinator Route Optimization Case Study -->
-            <div id="case-study-route-optimization" class="bg-gray-50 rounded-xl shadow-lg p-8 mb-12">
-                <h3 class="text-2xl font-semibold text-indigo-700 mb-4">LiquorCoordinator Route Optimization: A Technical Deep Dive</h3>
-                
-                <!-- Corrected Image path -->
-                <img src="images/Screenshot 2025-08-21 141033.jpg" alt="A dashboard showing sites not visited in 90 days with route optimization, including a map with pins and a table of optimized visits." class="w-full object-cover rounded-lg my-6 shadow-md">
+            </div>
+        </div>
+    </section>
 
-                <h4 class="text-xl font-medium text-gray-800 mt-6 mb-2">The Challenge</h4>
-                <p class="text-gray-700 mb-4">
-                    The Department of Liquor and Lottery's field coordinators needed a data-driven solution to efficiently plan their site visits. The primary goal was to identify agencies that were overdue for a visit (90+ days since the last inspection) and generate an optimized route for each coordinator that could be completed within a standard workday.
-                </p>
+    <!-- Technical Case Studies Section -->
+    <section id="technical-case-studies" class="py-16 md:py-24 bg-gray-800 rounded-lg mx-4 mt-8 shadow-xl">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-teal-400 mb-12">Technical Case Studies</h2>
+            
+            <!-- New Section: From Theory to Implementation -->
+            <div id="process-deep-dive" class="bg-gray-900 rounded-xl shadow-lg p-8 mb-12">
+                <h3 class="text-2xl font-semibold text-teal-400 mb-4">From Theory to Implementation: A Technical Deep Dive</h3>
+                <p class="text-gray-300 mb-4">
+                    My projects start with a clear business problem, which I translate into a data-driven solution. This process ensures that every technical decision—from data modeling to algorithm choice—directly supports a tangible business outcome. The LiquorCoordinator Route Optimization project serves as a perfect example of this framework.
+                </p>
 
-                <h4 class="text-xl font-medium text-gray-800 mt-6 mb-2">Data & Methodology</h4>
-                <p class="text-gray-700 mb-4">
-                    This project involved creating a robust data pipeline and a predictive model. The pipeline, built using Power Query (M Language) in Power BI, ingested and prepared data from multiple SharePoint sources, handling complex data transformations, column standardization, and data merging. The prepared data was then fed into a Python script.
-                </p>
-                <p class="text-gray-700 mb-4">
-                    The Python script performed two key functions:
-                </p>
-                <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
-                    <li>**Geographic Clustering:** Using K-Means clustering from `scikit-learn`, the script grouped overdue agencies into geographically proximate clusters. The number of clusters was dynamically determined based on the total number of overdue agencies.</li>
-                    <li>**Route Optimization:** Within each cluster, a nearest-neighbor algorithm was used to determine the most efficient visiting order. For travel time and distance, the script used the `openrouteservice` API, with a Haversine distance calculation as a reliable fallback.</li>
-                </ul>
+                <h4 class="text-xl font-medium text-gray-200 mt-6 mb-2">1. The Business Challenge</h4>
+                <p class="text-gray-300 mb-4">
+                    The Department's field coordinators needed an efficient way to plan their site visits, specifically to agencies that were overdue for an inspection (90+ days). The goal was to generate an optimized route that could be completed within a standard workday, minimizing travel time and maximizing efficiency.
+                </p>
 
-                <h4 class="text-xl font-medium text-gray-800 mt-6 mb-2">Python Implementation Snippet</h4>
-                <p class="text-gray-700 mb-4">
-                    The following Python snippet demonstrates the core logic for the K-Means clustering and the subsequent route optimization using a nearest-neighbor approach.
-                </p>
-                <pre><code>
+                <h4 class="text-xl font-medium text-gray-200 mt-6 mb-2">2. Data & Theoretical Approach</h4>
+                <p class="text-gray-300 mb-4">
+                    The theoretical solution involved two key steps:
+                </p>
+                <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4">
+                    <li><strong>Geographic Clustering:</strong> The core idea was to group agencies that were close to each other. I chose a clustering algorithm, specifically K-Means clustering from `scikit-learn`, because it's a proven method for grouping data points based on their spatial coordinates.</li>
+                    <li><strong>Route Optimization:</strong> Once the agencies were grouped, the next theoretical step was to find the most efficient visiting order within each cluster. A nearest-neighbor algorithm was a practical choice, as it's a simple, effective heuristic for solving the Traveling Salesperson Problem (TSP) on a small scale.</li>
+                </ul>
+
+                <h4 class="text-xl font-medium text-gray-200 mt-6 mb-2">3. Implementation & Iteration</h4>
+                <p class="text-gray-300 mb-4">
+                    The implementation began with building a robust data pipeline in Power BI to ingest and clean the data. The cleaned data was then passed to a Python script that put the theory into practice. This is where I introduced a critical layer of resiliency.
+                </p>
+                <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4">
+                    <li>The script first applies K-Means clustering to the latitude and longitude of the overdue sites.</li>
+                    <li>Then, a loop iterates through each cluster, using a nearest-neighbor approach to determine the visit order.</li>
+                    <li>For real-world travel times and distances, the script attempts to use the `openrouteservice` API. However, because external APIs can sometimes fail, I built in a **critical fallback**: if the API call fails for any reason, the script seamlessly switches to a Haversine distance calculation. This ensures the process never breaks, providing a reliable and repeatable solution for the end-user.</li>
+                </ul>
+
+                <h4 class="text-xl font-medium text-gray-200 mt-6 mb-2">Python Implementation Snippet</h4>
+                <p class="text-gray-300 mb-4">
+                    This snippet demonstrates the core logic for the K-Means clustering and the subsequent route optimization with the Haversine fallback.
+                </p>
+                <pre><code>
 import pandas as pd
 import numpy as np
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 import openrouteservice, os, warnings
 
+# Ignore a specific warning from scikit-learn
 os.environ['OMP_NUM_THREADS'] = '1'
 warnings.filterwarnings('ignore')
 
 # Note: The OpenRouteService API key has been removed for security.
 client = openrouteservice.Client(
-    key='YOUR_API_KEY_HERE'
+    key='YOUR_API_KEY_HERE'
 )
 
 def safe_numeric(s, default=0):
-    """Converts a pandas Series to a numeric type, handling errors."""
-    return pd.to_numeric(s, errors='coerce').fillna(default)
+    """Converts a pandas Series to a numeric type, handling errors."""
+    return pd.to_numeric(s, errors='coerce').fillna(default)
 
 def optimize_overdue_visits(dataset: pd.DataFrame) -> pd.DataFrame:
-    """
-    Identifies overdue visits, clusters them geographically, and
-    optimizes a visiting order for each cluster.
-    """
-    # Filter for agencies overdue by 90+ days
-    overdue_raw = dataset[dataset['OverdueVisit90Days'] == True].copy()
-    overdue_raw['SiteVisitDate_Clean'] = pd.to_datetime(overdue_raw['LastVisitDate'], errors='coerce')
+    """
+    Identifies overdue visits, clusters them geographically, and
+    optimizes a visiting order for each cluster.
+    """
+    # Filter for agencies overdue by 90+ days
+    overdue_raw = dataset[dataset['OverdueVisit90Days'] == True].copy()
+    overdue_raw['SiteVisitDate_Clean'] = pd.to_datetime(overdue_raw['LastVisitDate'], errors='coerce')
 
-    # Keep only the most recent overdue visit per agency
-    overdue_sites = (
-        overdue_raw.sort_values('SiteVisitDate_Clean', ascending=False)
-        .drop_duplicates(subset='Agency', keep='first')
-        .copy()
-    )
+    # Keep only the most recent overdue visit per agency
+    overdue_sites = (
+        overdue_raw.sort_values('SiteVisitDate_Clean', ascending=False)
+        .drop_duplicates(subset='Agency', keep='first')
+        .copy()
+    )
 
-    if overdue_sites.empty:
-        return pd.DataFrame() # Return empty if no overdue sites
+    if overdue_sites.empty:
+        return pd.DataFrame() # Return empty if no overdue sites
 
-    # Feature scaling for K-Means clustering
-    coords = overdue_sites[['Latitude', 'Longitude']].astype(float).values
-    # Determine number of clusters, capped at 10
-    k = max(2, min(len(overdue_sites) // 8, 10))
-    coords_scaled = StandardScaler().fit_transform(coords)
-    
-    # Apply K-Means clustering
-    overdue_sites['ClusterID'] = KMeans(n_clusters=k, random_state=42, n_init=10).fit_predict(coords_scaled)
+    # Feature scaling for K-Means clustering
+    coords = overdue_sites[['Latitude', 'Longitude']].astype(float).values
+    # Determine number of clusters, capped at 10
+    k = max(2, min(len(overdue_sites) // 8, 10))
+    coords_scaled = StandardScaler().fit_transform(coords)
+    
+    # Apply K-Means clustering
+    overdue_sites['ClusterID'] = KMeans(n_clusters=k, random_state=42, n_init=10).fit_predict(coords_scaled)
 
-    # Main routing loop to optimize each cluster
-    routes = []
-    for cid, grp in overdue_sites.groupby('ClusterID'):
-        pts = grp.reset_index(drop=True)
-        n = len(pts)
-        order, visited, cur = [0], [True] + [False] * (n - 1), 0
+    # Main routing loop to optimize each cluster
+    routes = []
+    for cid, grp in overdue_sites.groupby('ClusterID'):
+        pts = grp.reset_index(drop=True)
+        n = len(pts)
+        order, visited, cur = [0], [True] + [False] * (n - 1), 0
 
-        # Simple nearest-neighbor for route ordering
-        while len(order) < n:
-            lat1, lon1 = pts.at[cur, 'Latitude'], pts.at[cur, 'Longitude']
-            dists = [
-                np.hypot(lat1 - pts.at[j, 'Latitude'], lon1 - pts.at[j, 'Longitude'])
-                if not visited[j] else np.inf
-            ]
-            nxt = int(np.argmin(dists))
-            order.append(nxt)
-            visited[nxt], cur = True, nxt
+        # Simple nearest-neighbor for route ordering
+        while len(order) < n:
+            lat1, lon1 = pts.at[cur, 'Latitude'], pts.at[cur, 'Longitude']
+            dists = [
+                np.hypot(lat1 - pts.at[j, 'Latitude'], lon1 - pts.at[j, 'Longitude'])
+                if not visited[j] else np.inf
+            ]
+            nxt = int(np.argmin(dists))
+            order.append(nxt)
+            visited[nxt], cur = True, nxt
 
-        prev = None
-        for seq, idx in enumerate(order):
-            row = pts.iloc[idx].copy()
-            row['VisitOrder'] = seq + 1
+        prev = None
+        for seq, idx in enumerate(order):
+            row = pts.iloc[idx].copy()
+            row['VisitOrder'] = seq + 1
 
-            if prev is None:
-                row['TravelDistanceMiles'] = row['TravelTimeMinutes'] = 0
-                row['DistanceMethod'] = 'N/A'
-            else:
-                # Use OpenRouteService API for realistic routing
-                c_prev = (pts.at[prev, 'Longitude'], pts.at[prev, 'Latitude'])
-                c_cur = (row['Longitude'], row['Latitude'])
-                try:
-                    res = client.directions([c_prev, c_cur], profile='driving-car')
-                    summ = res['routes'][0]['summary']
-                    row['TravelDistanceMiles'] = round(summ['distance'] / 1609.34, 2)
-                    row['TravelTimeMinutes'] = round(summ['duration'] / 60, 1)
-                    row['DistanceMethod'] = 'ORS'
-                except:
-                    # Fallback to Haversine if API fails
-                    d = np.hypot(c_prev[0] - c_cur[0], c_prev[1] - c_cur[1]) * 69
-                    row['TravelDistanceMiles'] = round(d, 2)
-                    row['TravelTimeMinutes'] = round(d / 35 * 60, 1)
-                    row['DistanceMethod'] = 'Haversine'
-            
-            routes.append(row)
-            prev = idx
+            if prev is None:
+                row['TravelDistanceMiles'] = row['TravelTimeMinutes'] = 0
+                row['DistanceMethod'] = 'N/A'
+            else:
+                # Use OpenRouteService API for realistic routing
+                c_prev = (pts.at[prev, 'Longitude'], pts.at[prev, 'Latitude'])
+                c_cur = (row['Longitude'], row['Latitude'])
+                try:
+                    res = client.directions([c_prev, c_cur], profile='driving-car')
+                    summ = res['routes'][0]['summary']
+                    row['TravelDistanceMiles'] = round(summ['distance'] / 1609.34, 2)
+                    row['TravelTimeMinutes'] = round(summ['duration'] / 60, 1)
+                    row['DistanceMethod'] = 'ORS'
+                except:
+                    # Fallback to Haversine if API fails
+                    d = np.hypot(c_prev[0] - c_cur[0], c_prev[1] - c_cur[1]) * 69
+                    row['TravelDistanceMiles'] = round(d, 2)
+                    row['TravelTimeMinutes'] = round(d / 35 * 60, 1)
+                    row['DistanceMethod'] = 'Haversine'
+            
+            routes.append(row)
+            prev = idx
 
-    return pd.DataFrame(routes)
+    return pd.DataFrame(routes)
 
 # Assuming 'dataset' is a pre-existing pandas DataFrame
 # The function would be called like this in the full script:
 # clustered_data = optimize_overdue_visits(dataset)
-                </code></pre>
-            </div>
-            
-            <!-- You can add more case studies here using the same structure -->
+                </code></pre>
+                
+                <h4 class="text-xl font-medium text-gray-200 mt-6 mb-2">4. Final Product & Impact</h4>
+                <img src="uploaded:image_5670a2.png-ff3ae87b-8e20-4311-a652-c04d248a964d" alt="A dashboard showing sites not visited in 90 days with route optimization, including a map with pins and a table of optimized visits." class="w-full object-cover rounded-lg my-6 shadow-md">
+                <p class="text-gray-300 mb-4">
+                    The final output is a dynamic Power BI dashboard that presents the optimized routes, including travel time and distance for each stop. This tool translates the theoretical model directly into an actionable, real-world solution for the field coordinators. It proves that sound data theory, when paired with robust and resilient implementation, can lead to significant improvements in operational efficiency and employee satisfaction.
+                </p>
+            </div>
+        </div>
+    </section>
 
-        </div>
-    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gray-900 rounded-lg mx-4 mt-8 shadow-xl">
+        <div class="container mx-auto px-4 max-w-2xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-teal-400 mb-8">Get In Touch</h2>
+            <p class="text-lg text-gray-300 mb-8">
+                I'm always open to discussing new opportunities or collaborating on impactful data initiatives. Feel free to reach out!
+            </p>
+            <div class="space-y-4">
+                <p class="text-xl text-teal-400 font-semibold">
+                    Email: <a href="mailto:raiferallen@gmail.com" class="text-teal-300 hover:underline">raiferallen@gmail.com</a>
+                </p>
+                <p class="text-xl text-teal-400 font-semibold">
+                    LinkedIn: <a href="https://www.linkedin.com/in/raifer-allen-166430163" target="_blank" class="text-teal-300 hover:underline">linkedin.com/in/raifer-allen-166430163</a>
+                </p>
+            </div>
+        </div>
+    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 md:py-24 bg-gray-50 rounded-lg mx-4 mt-8 shadow-xl">
-        <div class="container mx-auto px-4 max-w-2xl text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-indigo-800 mb-8">Get In Touch</h2>
-            <p class="text-lg text-gray-700 mb-8">
-                I'm always open to discussing new opportunities or collaborating on impactful data initiatives. Feel free to reach out!
-            </p>
-            <div class="space-y-4">
-                <p class="text-xl text-indigo-700 font-semibold">
-                    Email: <a href="mailto:raiferallen@gmail.com" class="text-indigo-600 hover:underline">raiferallen@gmail.com</a>
-                </p>
-                <p class="text-xl text-indigo-700 font-semibold">
-                    LinkedIn: <a href="https://www.linkedin.com/in/raifer-allen-166430163" target="_blank" class="text-indigo-600 hover:underline">linkedin.com/in/raifer-allen-166430163</a>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 mt-8 rounded-t-lg">
-        <div class="container mx-auto text-center px-4">
-            <p>&copy; 2025 Raifer Allen. All rights reserved.</p>
-            <div class="mt-4 text-sm text-gray-400">
-                Built with <span class="text-red-500">&hearts;</span> and Tailwind CSS.
-            </div>
-        </div>
-    </footer>
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-white py-8 mt-8 rounded-t-lg">
+        <div class="container mx-auto text-center px-4">
+            <p>&copy; 2025 Raifer Allen. All rights reserved.</p>
+            <div class="mt-4 text-sm text-gray-400">
+                Built with <span class="text-red-500">&hearts;</span> and Tailwind CSS.
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
