@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raifer Allen - Data Strategy Manager Portfolio</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for a professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS to set the default font and body styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+            color: #334155; /* Darker text color */
+        }
+        /* Smooth scroll for navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Adjust for sticky header padding for anchor links */
+        :target::before {
+            content: "";
+            display: block;
+            height: 4rem; /* Height of the sticky header */
+            margin-top: -4rem; /* Negative margin to offset */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white shadow-lg p-4 rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo/Name -->
+            <a href="#" class="text-2xl font-bold text-indigo-700">Raifer Allen</a>
+            <!-- Navigation Links -->
+            <div class="space-x-6">
+                <a href="#about" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300">About</a>
+                <a href="#projects" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300">Projects</a>
+                <a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Executive Summary) -->
+    <header class="bg-gradient-to-r from-indigo-700 to-purple-600 text-white py-20 md:py-28 text-center shadow-lg rounded-lg mx-4 mt-8">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4 animate-fade-in-down">
+                Raifer Allen
+            </h1>
+            <p class="text-xl md:text-2xl font-light mb-8">
+                Data Strategy Manager | Empowering Data-Driven Decisions
+            </p>
+            <p class="max-w-3xl mx-auto text-lg mb-10 opacity-90">
+                Transforming complex data into actionable insights for strategic growth and operational excellence. Specializing in operational visibility, machine learning, and translating data into business success.
+            </p>
+            <a href="#projects" class="inline-block bg-white text-indigo-700 hover:bg-indigo-100 px-8 py-4 rounded-full text-lg font-semibold shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
+                View My Work
+            </a>
+        </div>
+    </header>
+
+    <!-- About Me & Skills Section -->
+    <section id="about" class="py-16 md:py-24 bg-white rounded-lg mx-4 mt-8 shadow-xl">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-indigo-800 mb-12">About Me & My Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="text-lg leading-relaxed text-gray-700">
+                    <p class="mb-6">
+                        As a Data Strategy Manager for the Department of Liquor and Lottery, I thrive at the intersection of data science, business strategy, and effective communication. My core mission is to empower leaders with the insights needed to define and achieve a successful day, optimizing operations and maximizing strategic outcomes.
+                    </p>
+                    <p>
+                        I specialize in building robust frameworks for operational visibility, developing and implementing impactful machine learning algorithms, and fostering clear, actionable stakeholder communication. My approach focuses on translating complex data narratives into clear, strategic directives that drive tangible results.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-6">Key Skills & Tools</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li class="font-medium text-lg">Data Strategy & Governance</li>
+                            <li class="font-medium text-lg">Machine Learning (Development & Deployment)</li>
+                            <li class="font-medium text-lg">Operational Visibility & KPIs</li>
+                            <li class="font-medium text-lg">Stakeholder Communication</li>
+                            <li class="font-medium text-lg">Data Storytelling & Visualization</li>
+                            <li class="font-medium text-lg">SQL & Database Management</li>
+                        </ul>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li class="font-medium text-lg">Python (Pandas, Scikit-learn, etc.)</li>
+                            <li class="font-medium text-lg">Business Intelligence Tools (e.g., Tableau, Power BI)</li>
+                            <li class="font-medium text-lg">Predictive Analytics</li>
+                            <li class="font-medium text-lg">A/B Testing & Experimentation</li>
+                            <li class="font-medium text-lg">Project Management</li>
+                            <li class="font-medium text-lg">Risk Assessment & Mitigation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-24 bg-gray-50 rounded-lg mx-4 mt-8 shadow-xl">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-indigo-800 mb-12">My Impactful Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- New Store Location Strategy -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col">
+                    <img src="images/new-store-location-strategy.png" alt="An abstract map showing data points and a new store location." class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-3">New Store Location Strategy</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">
+                        Developed a comprehensive data model to identify optimal locations for new 802Spirits stores. The analysis combined census data, existing sales data, flood plain data, and AOT traffic density information to pinpoint high-potential sites.
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
+                        <li>**Impact:** Generated a projected **$1.87 million in new revenue for FY25** by providing data-backed recommendations for store locations.</li>
+                        <li>**Tools:** Python, GIS tools, advanced data analysis techniques, data modeling.</li>
+                    </ul>
+                </div>
+
+                <!-- Project Card 1: Compliance & Public Health -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col">
+                    <img src="images/synar-sampling-strategy.png" alt="A visual representation of a random sampling strategy for compliance checks." class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-3">Compliance & Public Health - Synar Sampling Strategy</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">
+                        Designed a statistically valid random sampling process for tobacco compliance checks across three geographic zones, reducing annual checks from 1271 to 324. This action provided a repeatable methodology that maintains federal compliance while optimizing enforcement resources.
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
+                        <li>**Impact:** Provided a repeatable sampling methodology that maintains compliance with federal Synar requirements and optimizes enforcement resources.</li>
+                        <li>**Tools:** Power BI, Power Query (M), random sampling algorithms, Salesforce integration planning.</li>
+                    </ul>
+                </div>
+
+                <!-- Project Card 2: Enterprise KPIs -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col">
+                    <img src="images/enterprise-kpis.png" alt="A modern business intelligence dashboard with charts and graphs." class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-3">Enterprise KPIs & Performance Strategy</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">
+                        Initiated a unified KPI framework by engaging managers across multiple divisions (Finance, Licensing, Enforcement, etc.) to define productivity and identify data sources. This established the foundation for cross-departmental dashboards that reflect real operational impact.
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
+                        <li>**Impact:** Set the foundation for cross-departmental performance dashboards that reflect real operational impact, not vanity metrics.</li>
+                        <li>**Tools:** Facilitation, stakeholder engagement, KPI development, strategic alignment.</li>
+                    </ul>
+                </div>
+
+                <!-- Project Card 3: Route Optimization -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col">
+                    <img src="images/route-optimization.png" alt="A top-down view of an optimized route with stops." class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-3">LiquorCoordinator Route Optimization</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">
+                        Developed a route optimization solution using Python integrations, k-means clustering, and Haversine distance calculations. This project improved coordinator efficiency and agency satisfaction by fitting site visits into viable clusters for an eight-hour workday.
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
+                        <li>**Impact:** Improved coordinator efficiency and improved agency satisfaction.</li>
+                        <li>**Tools:** Python, k-means clustering, Haversine, Power BI.</li>
+                    </ul>
+                </div>
+
+                <!-- Project Card 4: Email Migration -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col">
+                    <img src="images/email-migration.png" alt="An animated visual of email icons flowing into a SharePoint logo." class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-3">Outlook Email Migration to SharePoint</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">
+                        Automated the migration of Outlook group emails to SharePoint lists using Power Automate. This provided real-time operational visibility into average response times, first response times, and email categorization, including sentiment analysis.
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-gray-500 mb-4">
+                        <li>**Impact:** Provided operational visibility, including average response times, first response time categorization of emails.</li>
+                        <li>**Tools:** Power Automate, SharePoint, Power BI.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gray-50 rounded-lg mx-4 mt-8 shadow-xl">
+        <div class="container mx-auto px-4 max-w-2xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-indigo-800 mb-8">Get In Touch</h2>
+            <p class="text-lg text-gray-700 mb-8">
+                I'm always open to discussing new opportunities or collaborating on impactful data initiatives. Feel free to reach out!
+            </p>
+            <div class="space-y-4">
+                <p class="text-xl text-indigo-700 font-semibold">
+                    Email: <a href="mailto:raiferallen@gmail.com" class="text-indigo-600 hover:underline">raiferallen@gmail.com</a>
+                </p>
+                <p class="text-xl text-indigo-700 font-semibold">
+                    LinkedIn: <a href="https://www.linkedin.com/in/raifer-allen-166430163" target="_blank" class="text-indigo-600 hover:underline">linkedin.com/in/raifer-allen-166430163</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-8 rounded-t-lg">
+        <div class="container mx-auto text-center px-4">
+            <p>&copy; 2025 Raifer Allen. All rights reserved.</p>
+            <div class="mt-4 text-sm text-gray-400">
+                Built with <span class="text-red-500">&hearts;</span> and Tailwind CSS.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
