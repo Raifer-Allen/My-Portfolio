@@ -26,6 +26,17 @@
             height: 4rem; /* Height of the sticky header */
             margin-top: -4rem; /* Negative margin to offset */
         }
+        /* Code block styling */
+        pre {
+            background-color: #2d3748; /* Darker background for code */
+            color: #e2e8f0; /* Lighter text color */
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.5;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -39,6 +50,7 @@
             <div class="space-x-6">
                 <a href="#about" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300">About</a>
                 <a href="#projects" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300">Projects</a>
+                <a href="#case-studies" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300">Case Studies</a>
                 <a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300">Contact</a>
             </div>
         </div>
@@ -117,6 +129,7 @@
                         <li>**Impact:** Generated a projected **$1.87 million in new revenue for FY25** by providing data-backed recommendations for store locations.</li>
                         <li>**Tools:** Python, GIS tools, advanced data analysis techniques, data modeling.</li>
                     </ul>
+                    <a href="#case-study-route-optimization" class="text-indigo-600 hover:underline font-medium mt-auto">View Technical Deep Dive &rarr;</a>
                 </div>
 
                 <!-- Project Card 1: Compliance & Public Health -->
@@ -134,7 +147,8 @@
 
                 <!-- Project Card 2: Enterprise KPIs -->
                 <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col">
-                    <img src="images/enterprise-kpis.png" alt="A modern business intelligence dashboard with charts and graphs." class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                    <!-- Image added by user -->
+                    <img src="uploaded:Screenshot 2025-08-21 141005.png-9a2e3aef-8151-4eeb-8cab-a968449099d4" alt="A dashboard showing Liquor Coordinator Performance, with charts and graphs of visit duration, travel time, and efficiency." class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
                     <h3 class="text-2xl font-semibold text-indigo-700 mb-3">Enterprise KPIs & Performance Strategy</h3>
                     <p class="text-gray-600 mb-4 flex-grow">
                         Initiated a unified KPI framework by engaging managers across multiple divisions (Finance, Licensing, Enforcement, etc.) to define productivity and identify data sources. This established the foundation for cross-departmental dashboards that reflect real operational impact.
@@ -156,11 +170,13 @@
                         <li>**Impact:** Improved coordinator efficiency and improved agency satisfaction.</li>
                         <li>**Tools:** Python, k-means clustering, Haversine, Power BI.</li>
                     </ul>
+                    <a href="#case-study-route-optimization" class="text-indigo-600 hover:underline font-medium mt-auto">View Technical Deep Dive &rarr;</a>
                 </div>
 
                 <!-- Project Card 4: Email Migration -->
                 <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col">
-                    <img src="images/email-migration.png" alt="An animated visual of email icons flowing into a SharePoint logo." class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                    <!-- Image added by user -->
+                    <img src="uploaded:image_55713f.png-92d1406d-3c9d-442d-8c62-e11031966d6e" alt="A dashboard showing email response metrics by category and sentiment analysis." class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
                     <h3 class="text-2xl font-semibold text-indigo-700 mb-3">Outlook Email Migration to SharePoint</h3>
                     <p class="text-gray-600 mb-4 flex-grow">
                         Automated the migration of Outlook group emails to SharePoint lists using Power Automate. This provided real-time operational visibility into average response times, first response times, and email categorization, including sentiment analysis.
@@ -171,6 +187,146 @@
                     </ul>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Technical Case Studies Section -->
+    <section id="case-studies" class="py-16 md:py-24 bg-white rounded-lg mx-4 mt-8 shadow-xl">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-indigo-800 mb-12">Technical Case Studies</h2>
+
+            <!-- LiquorCoordinator Route Optimization Case Study -->
+            <div id="case-study-route-optimization" class="bg-gray-50 rounded-xl shadow-lg p-8 mb-12">
+                <h3 class="text-2xl font-semibold text-indigo-700 mb-4">LiquorCoordinator Route Optimization: A Technical Deep Dive</h3>
+                
+                <!-- Image added by user -->
+                <img src="uploaded:Screenshot 2025-08-21 141033.jpg-6c661a16-99a6-4627-a4f2-a4be887d0ce0" alt="A dashboard showing sites not visited in 90 days with route optimization, including a map with pins and a table of optimized visits." class="w-full object-cover rounded-lg my-6 shadow-md">
+
+                <h4 class="text-xl font-medium text-gray-800 mt-6 mb-2">The Challenge</h4>
+                <p class="text-gray-700 mb-4">
+                    The Department of Liquor and Lottery's field coordinators needed a data-driven solution to efficiently plan their site visits. The primary goal was to identify agencies that were overdue for a visit (90+ days since the last inspection) and generate an optimized route for each coordinator that could be completed within a standard workday.
+                </p>
+
+                <h4 class="text-xl font-medium text-gray-800 mt-6 mb-2">Data & Methodology</h4>
+                <p class="text-gray-700 mb-4">
+                    This project involved creating a robust data pipeline and a predictive model. The pipeline, built using Power Query (M Language) in Power BI, ingested and prepared data from multiple SharePoint sources, handling complex data transformations, column standardization, and data merging. The prepared data was then fed into a Python script.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    The Python script performed two key functions:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+                    <li>**Geographic Clustering:** Using K-Means clustering from `scikit-learn`, the script grouped overdue agencies into geographically proximate clusters. The number of clusters was dynamically determined based on the total number of overdue agencies.</li>
+                    <li>**Route Optimization:** Within each cluster, a nearest-neighbor algorithm was used to determine the most efficient visiting order. For travel time and distance, the script used the `openrouteservice` API, with a Haversine distance calculation as a reliable fallback.</li>
+                </ul>
+
+                <h4 class="text-xl font-medium text-gray-800 mt-6 mb-2">Python Implementation Snippet</h4>
+                <p class="text-gray-700 mb-4">
+                    The following Python snippet demonstrates the core logic for the K-Means clustering and the subsequent route optimization using a nearest-neighbor approach.
+                </p>
+                <pre><code>
+import pandas as pd
+import numpy as np
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+import openrouteservice, os, warnings
+
+os.environ['OMP_NUM_THREADS'] = '1'
+warnings.filterwarnings('ignore')
+
+# Note: The OpenRouteService API key has been removed for security.
+client = openrouteservice.Client(
+    key='YOUR_API_KEY_HERE'
+)
+
+def safe_numeric(s, default=0):
+    """Converts a pandas Series to a numeric type, handling errors."""
+    return pd.to_numeric(s, errors='coerce').fillna(default)
+
+def optimize_overdue_visits(dataset: pd.DataFrame) -> pd.DataFrame:
+    """
+    Identifies overdue visits, clusters them geographically, and
+    optimizes a visiting order for each cluster.
+    """
+    # Filter for agencies overdue by 90+ days
+    overdue_raw = dataset[dataset['OverdueVisit90Days'] == True].copy()
+    overdue_raw['SiteVisitDate_Clean'] = pd.to_datetime(overdue_raw['LastVisitDate'], errors='coerce')
+
+    # Keep only the most recent overdue visit per agency
+    overdue_sites = (
+        overdue_raw.sort_values('SiteVisitDate_Clean', ascending=False)
+        .drop_duplicates(subset='Agency', keep='first')
+        .copy()
+    )
+
+    if overdue_sites.empty:
+        return pd.DataFrame() # Return empty if no overdue sites
+
+    # Feature scaling for K-Means clustering
+    coords = overdue_sites[['Latitude', 'Longitude']].astype(float).values
+    # Determine number of clusters, capped at 10
+    k = max(2, min(len(overdue_sites) // 8, 10))
+    coords_scaled = StandardScaler().fit_transform(coords)
+    
+    # Apply K-Means clustering
+    overdue_sites['ClusterID'] = KMeans(n_clusters=k, random_state=42, n_init=10).fit_predict(coords_scaled)
+
+    # Main routing loop to optimize each cluster
+    routes = []
+    for cid, grp in overdue_sites.groupby('ClusterID'):
+        pts = grp.reset_index(drop=True)
+        n = len(pts)
+        order, visited, cur = [0], [True] + [False] * (n - 1), 0
+
+        # Simple nearest-neighbor for route ordering
+        while len(order) < n:
+            lat1, lon1 = pts.at[cur, 'Latitude'], pts.at[cur, 'Longitude']
+            dists = [
+                np.hypot(lat1 - pts.at[j, 'Latitude'], lon1 - pts.at[j, 'Longitude'])
+                if not visited[j] else np.inf
+                for j in range(n)
+            ]
+            nxt = int(np.argmin(dists))
+            order.append(nxt)
+            visited[nxt], cur = True, nxt
+
+        prev = None
+        for seq, idx in enumerate(order):
+            row = pts.iloc[idx].copy()
+            row['VisitOrder'] = seq + 1
+
+            if prev is None:
+                row['TravelDistanceMiles'] = row['TravelTimeMinutes'] = 0
+                row['DistanceMethod'] = 'N/A'
+            else:
+                # Use OpenRouteService API for realistic routing
+                c_prev = (pts.at[prev, 'Longitude'], pts.at[prev, 'Latitude'])
+                c_cur = (row['Longitude'], row['Latitude'])
+                try:
+                    res = client.directions([c_prev, c_cur], profile='driving-car')
+                    summ = res['routes'][0]['summary']
+                    row['TravelDistanceMiles'] = round(summ['distance'] / 1609.34, 2)
+                    row['TravelTimeMinutes'] = round(summ['duration'] / 60, 1)
+                    row['DistanceMethod'] = 'ORS'
+                except:
+                    # Fallback to Haversine if API fails
+                    d = np.hypot(c_prev[0] - c_cur[0], c_prev[1] - c_cur[1]) * 69
+                    row['TravelDistanceMiles'] = round(d, 2)
+                    row['TravelTimeMinutes'] = round(d / 35 * 60, 1)
+                    row['DistanceMethod'] = 'Haversine'
+            
+            routes.append(row)
+            prev = idx
+
+    return pd.DataFrame(routes)
+
+# Assuming 'dataset' is a pre-existing pandas DataFrame
+# The function would be called like this in the full script:
+# clustered_data = optimize_overdue_visits(dataset)
+                </code></pre>
+            </div>
+            
+            <!-- You can add more case studies here using the same structure -->
+
         </div>
     </section>
 
